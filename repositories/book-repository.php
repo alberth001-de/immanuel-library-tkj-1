@@ -1,6 +1,8 @@
 <?php
 
-$books = [
+functin getBooks()
+{
+  $books = [
   [
     "id" => 1,
     "title" => "Laskar Pelangi",
@@ -43,7 +45,11 @@ $books = [
   ],
 ];
 
-$book = [
+return $books;
+}
+
+functin getBook(){
+  $book = [
   "id" => 5,
   "title" => "Antologi Rasa Nusantara",
   "isbn" => "978-602-1234-56-7",
@@ -53,3 +59,6 @@ $book = [
   "description" => "Kumpulan puisi dan cerita pendek dari berbagai penulis Nusantara.",
   "authors" => ["Pramoedya Ananta Toer", "Sapardi Djoko Damono"],
 ];
+
+return $book;
+}

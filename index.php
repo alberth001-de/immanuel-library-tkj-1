@@ -3,8 +3,6 @@ $title ="Beranda - Immanuel Library";
 
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="id">
 
