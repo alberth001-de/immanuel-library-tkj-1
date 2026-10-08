@@ -1,3 +1,5 @@
+<?php require_once __DIR__ . "/../../repositories/book-repository.php";?>
+
 <!DOCTYPE html>
 <html lang="id">
 
@@ -9,16 +11,6 @@
 </head>
 
 <body>
-  <?php
-  $book = [
-    "id" => 1,
-    "title" => "Laskar Pelangi",
-    "category" => "Fiksi",
-    "year" => 2005,
-    "stock" => 12,
-    "authors" => "Andrea Hirata",
-  ];
-  ?>
   <div class="app-shell">
     <aside class="app-sidebar">
       <div class="brand">
@@ -110,7 +102,8 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <?php foreach($books as $index => $book):?>
+                <tr>
                 <td>
                   <div class="cell-primary">
                     <span class="cell-thumb"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
@@ -124,7 +117,7 @@
                 <td><span class="badge badge-muted"><?= $book['category'] ?></span></td>
                 <td>
                   <div class="chip-list">
-                    <span class="chip"><?= $book['authors'] ?></span>
+                    <span class="chip"><?= is_array($book['authors']) ? implode(', ', $book['authors']) : $book['authors'] ?></span>
                   </div>
                 </td>
                 <td><?= $book['stock'] ?></td>
@@ -135,6 +128,7 @@
                   </div>
                 </td>
               </tr>
+              <?php endforeach?>
             </tbody>
           </table>
         </div>
