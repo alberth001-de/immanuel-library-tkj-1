@@ -13,7 +13,7 @@
 </head>
 <body>
   <?php
-  $category = ["id" => 1, "name" => "Fiksi", "description" => "Novel dan cerita rekaan", "total_books" => 3];
+  
   ?>
   <div class="app-shell">
   <?php

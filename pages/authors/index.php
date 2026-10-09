@@ -1,4 +1,6 @@
 <?php
+  require __DIR__ . "/../../repositories/author-repository.php/"
+  $authors = getAuthors()
   $pageTitle = "Manajemen Penulis" 
   $pageSubtitle = "Kelola data penulis yang terdaftar di sistem"
 ?>
@@ -47,6 +49,7 @@
               </tr>
             </thead>
             <tbody>
+              <?php foreach ($authors as $author): ?>
               <tr>
                 <td>
                   <div class="cell-primary">
@@ -62,6 +65,7 @@
                   </div>
                 </td>
               </tr>
+              <?php endforeach; ?>
             </tbody>
           </table>
         </div>
