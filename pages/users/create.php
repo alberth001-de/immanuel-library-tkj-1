@@ -1,3 +1,8 @@
+<?php
+  $pageTitle = "Tambah Pengguna" 
+  $pageSubtitle = "buat akun pengguna baru beserta perannya"
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -14,7 +19,7 @@
 
     <main class="app-main">
     <?php
-      require_once __DIR__ . "/../../components/admin/tobbar.php/"
+      require_once __DIR__ . "/../../components/admin/topbar.php/"
       ?>
 
       <div class="app-content">

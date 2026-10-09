@@ -1,3 +1,8 @@
+<?php
+  $pageTitle = "Manajemen Buku" 
+  $pageSubtitle = "Kelola data buku, kategori, dan penulis"
+?>
+
 <?php 
 require_once __DIR__ . "/../../repositories/book-repository.php";
 
@@ -22,7 +27,7 @@ $books = getBook();
 
     <main class="app-main">
       <?php
-      require_once __DIR__ . "/../../components/admin/tobbar.php/"
+      require_once __DIR__ . "/../../components/admin/topbar.php/"
       ?>
 
       <div class="app-content">

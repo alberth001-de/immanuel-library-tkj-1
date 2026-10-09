@@ -1,3 +1,8 @@
+<?php
+  $pageTitle = "Edit Penulis" 
+  $pageSubtitle = "Perbarui data penulis"
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 
@@ -23,7 +28,7 @@
 
     <main class="app-main">
       <?php
-      require_once __DIR__ . "/../../components/admin/tobbar.php/"
+      require_once __DIR__ . "/../../components/admin/topbar.php/"
       ?>
 
       <div class="app-content">

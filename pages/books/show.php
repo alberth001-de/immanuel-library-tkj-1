@@ -1,4 +1,9 @@
 <?php
+  $pageTitle = "Tambah Kategori" 
+  $pageSubtitle = "buat kategori baru untuk mengelompokkan buku"
+?>
+
+<?php
   require_once __DIR__ . '../../repositories/book-repository.php';
   
   $book = getBook();
@@ -22,7 +27,7 @@
 
     <main class="app-main">
     <?php
-      require_once __DIR__ . "/../../components/admin/tobbar.php/"
+      require_once __DIR__ . "/../../components/admin/topbar.php/"
       ?>
 
       <div class="app-content">
