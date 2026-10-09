@@ -10,7 +10,17 @@ $authors = [
 ];
 return $authors;
 
-
-
 )
+function getAuthor()
+{
+    $author = [
+        "id" => 1,
+        "name" => "Andrea Hirata",
+        "total_books" => 1,
+        "bio" => "Penulis novel."
+    ];
 
+    return $author;
+}
+
+?>

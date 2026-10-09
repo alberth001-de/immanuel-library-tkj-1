@@ -1,4 +1,6 @@
 <?php
+  require __DIR__ . "/../../repositories/category-repository.php/"
+  $category = getCategory();
   $pageTitle = "Manajemen Penulis" 
   $pageSubtitle = "Kelola data penulis yang terdaftar di sistem"
 ?>
