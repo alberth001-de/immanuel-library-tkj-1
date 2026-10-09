@@ -1,6 +1,6 @@
 <?php
-  $pageTitle = "Manajemen Penulis" 
-  $pageSubtitle = "Tambah Kategori"
+  $pageTitle = "Manajemen Penulis";
+  $pageSubtitle = "Tambah Kategori";
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@
 <body>
   <div class="app-shell">
   <?php
-      require_once __DIR__ . "/../../components/admin/sidebar.php/"
+      require_once __DIR__ . "/../../components/admin/sidebar.php/";
     ?>
 
     <main class="app-main">
@@ -23,7 +23,7 @@
       ?>
 
       <div class="app-content">
-        <form method="" action="">
+        <form method="POST" action="../../actions/categories/store.php">
           <div class="form-card">
             <div class="form-section-title">Data Kategori</div>
             <div class="form-group">

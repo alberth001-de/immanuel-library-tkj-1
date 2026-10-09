@@ -1,8 +1,8 @@
 <?php
-  require __DIR__ . "/../../repositories/category-repository.php/"
+  require __DIR__ . "/../../repositories/category-repository.php/";
   $category = getCategory();
-  $pageTitle = "Manajemen Penulis" 
-  $pageSubtitle = "Kelola data penulis yang terdaftar di sistem"
+  $pageTitle = "Manajemen Penulis";
+  $pageSubtitle = "Kelola data penulis yang terdaftar di sistem";
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +36,11 @@
             </div>
             <button type="submit" class="btn btn-outline btn-sm">Cari</button>
           </form>
-          <a href="create.php" class="btn btn-primary">+ Tambah Kategori</a>
+          <a href="../../actions/categories/destroy.php?id=<?= $category['id'] ?>"
+            class="btn btn-danger btn-sm"
+            onclick="return confirm('Apakah kamu yakin ingin menghapus kategori ini?')">
+             Hapus
+          </a>
         </div>
 
         <div class="data-card">
@@ -50,6 +54,7 @@
               </tr>
             </thead>
             <tbody>
+              <?php foreach ($categories as $category): ?>
               <tr>
                 <td>
                   <div class="cell-primary">
@@ -66,6 +71,7 @@
                   </div>
                 </td>
               </tr>
+              <?php endforeach; ?>
             </tbody>
           </table>
         </div>
