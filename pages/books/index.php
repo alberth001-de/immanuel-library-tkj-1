@@ -89,7 +89,7 @@ $books = getBook();
                 <td>
                   <div class="cell-actions">
                     <a href="edit.php?id=<?= $book['id'] ?>" class="btn btn-outline btn-sm">Edit</a>
-                    <a href="#" class="btn btn-danger btn-sm">Hapus</a>
+                    <a href="../../actions/books/destroy.php?id=<?= $book['id'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah kamu yakin ingin menghapus buku ini?')">Hapus</a>
                   </div>
                 </td>
               </tr>
