@@ -1,8 +1,9 @@
 <?php
-  require __DIR__ . "/../../repositories/author-repository.php/"
-  $authors = getAuthors()
-  $pageTitle = "Manajemen Penulis" 
-  $pageSubtitle = "Kelola data penulis yang terdaftar di sistem"
+require_once __DIR__ . "/../../repositories/author-repository.php";
+
+$authors = getAuthors();
+$pageTitle = "Manajemen Penulis";
+$pageSubtitle = "Kelola data penulis yang terdaftar di sistem";
 ?>
 
 <!DOCTYPE html>
@@ -14,18 +15,16 @@
   <link rel="stylesheet" href="../../styles/authors/index.css">
 </head>
 <body>
-  <?php
-  $author = ["id" => 1, "name" => "Andrea Hirata", "total_books" => 1];
-  ?>
+  
   <div class="app-shell">
   <?php
-      require_once __DIR__ . "/../../components/admin/sidebar.php/"
-    ?>
+    require_once __DIR__ . "/../../components/admin/sidebar.php";
+  ?>
 
     <main class="app-main">
     <?php
-      require_once __DIR__ . "/../../components/admin/topbar.php/"
-      ?>
+      require_once __DIR__ . "/../../components/admin/topbar.php";
+    ?>
 
       <div class="app-content">
         <div class="toolbar">
